@@ -10,7 +10,7 @@
         protected function Conexion(){
             try {
                 /*TODO: Cadena de Conexion QA*/
-				$conectar = $this->dbh = new PDO("mysql:local=localhost;dbname=andercode_diplomas","root","");
+				$conectar = $this->dbh = new PDO("mysql:host=34.135.204.165;dbname=andercode_diplomas","felipem","123");
                 /*TODO: Cadena de Conexion Produccion*/
 				//$conectar = $this->dbh = new PDO("mysql:local=localhost;dbname=andercode_diplomas","diploma1","@ndercode");
 				return $conectar;
@@ -29,9 +29,9 @@
         /*TODO: Ruta principal del proyecto */
         public static function ruta(){
             //QA
-            return "http://localhost/Certificados/";
+            //return "http://localhost/Certificados/";
             //Produccion
-            //return "http://diplomas.anderson-bastidas.com/";
+            return "http://35.184.73.244/Certificados";
         }
 
     }
